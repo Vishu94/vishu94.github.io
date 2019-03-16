@@ -1,70 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-      <title>Q_dashboard</title>
-      <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-      <script>
-          function initViz() {
-              var containerDiv1 = document.getElementById("tableauViz1"),
-              url1 = "https://public.tableau.com/shared/M34RXTDCG?:display_count=yes";
-              var viz1 = new tableau.Viz(containerDiv1, url1);
+<html>
+	<head>
+		<title>coal project</title>
+		<meta charset="UTF-8"> <meta name="description" content="QCI coal project">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
 
-              var containerDiv2 = document.getElementById("tableauViz2"),
-              url2 = "https://public.tableau.com/shared/J5BMR2XQ4?:display_count=yes";
-              var viz2 = new tableau.Viz(containerDiv2, url2);
 
-              var containerDiv3 = document.getElementById("tableauViz3"),
-              url3 = "https://public.tableau.com/views/GV_15520385574990/GV_DASH?:embed=y&:display_count=yes&publish=yes";
-              var viz3 = new tableau.Viz(containerDiv3, url3);
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+			  <a class="navbar-brand" href="#">
+			  	<img src="qci.png" alt="This is a test image" class="logo">
+			  </a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
 
-              var containerDiv4 = document.getElementById("tableauViz4"),
-              url4 = "https://public.tableau.com/views/Refree/REFREE_DASH?:embed=y&:display_count=yes";
-              var viz4 = new tableau.Viz(containerDiv4, url4);
-          }
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link ml-3" href="index.html">Home</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link ml-3" href="proj-stat.html">Project Status</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link ml-3" href="http://qrcoal.qcin.org/">QR Coal</a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
+		</nav>
 
-          function show1() {
-            document.getElementById("tableauViz4").style = 'display: none';
-            document.getElementById("tableauViz3").style = 'display: none';
-            document.getElementById("tableauViz2").style = 'display: none';
-            document.getElementById("tableauViz1").style = 'display: block';
-          }
-          function show2() {
-            document.getElementById("tableauViz4").style = 'display: none';
-            document.getElementById("tableauViz3").style = 'display: none';
-            document.getElementById("tableauViz1").style = 'display: none';
-            document.getElementById("tableauViz2").style = 'display: block';
-          }
-          function show3() {
-            document.getElementById("tableauViz4").style = 'display: none';
-            document.getElementById("tableauViz2").style = 'display: none';
-            document.getElementById("tableauViz1").style = 'display: none';
-            document.getElementById("tableauViz3").style = 'display: block';
-          }
-          function show4() {
-            document.getElementById("tableauViz3").style = 'display: none';
-            document.getElementById("tableauViz2").style = 'display: none';
-            document.getElementById("tableauViz1").style = 'display: none';
-            document.getElementById("tableauViz4").style = 'display: block';
-          }
-        </script>
-  </head>
-  <body onload="initViz();">
-    <div onclick="show1();">
-      Signed and Monthly
-    </div>
-    <div onclick="show2();">
-      Reports status
-    </div>
-    <div onclick="show3();">
-      Grade variation
-    </div>
-    <div onclick="show4();">
-      Refree status
-    </div>
-<a href="DHOME.HTML">Home</a>
-    <div id="tableauViz2"></div>
-    <div id="tableauViz1"></div>
-    <div id="tableauViz3"></div>
-    <div id="tableauViz4"></div>
-  </body>
+
+
+		<div class="container pt-5">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="px-5">
+						<img src="sampling.png" alt="This is a test image" class="hero-img">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h1 class="main-heading pt-5 mt-5 mb-3 heading">Quality Council of India- 3rd Party Sampling, Testing and Analysis of Coal</h1>
+					<p class="mb-5 text">Third party Sampling provides transparent mechanism to scrutinise the coal quality of the coal dispatched to customers and to curb disputes between among its all stakeholders. Also, coal grade assessment plays an important criterion for revisiting mine grades.
+					Quality Council of India (QCI) has undertaken 3rd Party Sampling, Testing and Analysis of coal supplied through special forward e-auction for power consumer/s and linkage auction for non-power consumers. Further, the scope of work has been extended to spot e auction/ special spot e auction/ Shakti Scheme.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h3 class="mb-3 heading pt-5">Overall update</h3>
+					<ul class="text pl-2 pb-5">
+						<li class="mb-2">Quality Council of India (QCI) has commenced third party sampling across all 8 subsidiaries of Coal India Limited (CIL).</li>
+						<li class="mb-2">Tripartite agreements of volume of 101 million metric tonne have been signed for conducting the third-party sampling, testing and analysis.</li>
+						<li class="mb-2">A total volume of 54 MMT of coal is already being sampled from date of commencement. QCI has already sampled 44.65 Million Metric Tonnes in due course of 8 months</li>
+						<li class="mb-2">In order to ensure double blinding of Coal Sample, QCI has developed QR Code based application to capture collection, preparation across all loading points of Coal India Limited (CIL). Currently the Internal testing of the Application is being carried out.</li>
+						<li class="mb-2">Western Coalfields Limited has pursued QCI to monitor third party sampling at loading point being carried out by CIMFR. For the purpose QCI has submitted its proposal to Western Coalfields Limited (WCL) for the activity.</li>
+					</ul>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</body>
 </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <title>Q_dashboard</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/index.css">
+      <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+      <script>
+          function initViz() {
+              var containerDiv1 = document.getElementById("tableauViz1"),
+              url1 = "https://public.tableau.com/shared/M34RXTDCG?:display_count=yes";
+              var viz1 = new tableau.Viz(containerDiv1, url1);
+
+              var containerDiv2 = document.getElementById("tableauViz2"),
+              url2 = "https://public.tableau.com/shared/J5BMR2XQ4?:display_count=yes";
+              var viz2 = new tableau.Viz(containerDiv2, url2);
+
+              var containerDiv3 = document.getElementById("tableauViz3"),
+              url3 = "https://public.tableau.com/views/GV_15520385574990/GV_DASH?:embed=y&:display_count=yes&publish=yes";
+              var viz3 = new tableau.Viz(containerDiv3, url3);
+
+              var containerDiv4 = document.getElementById("tableauViz4"),
+              url4 = "https://public.tableau.com/views/Refree/REFREE_DASH?:embed=y&:display_count=yes";
+              var viz4 = new tableau.Viz(containerDiv4, url4);
+
+              document.getElementById("tableauViz4").style = 'display: none';
+              document.getElementById("tableauViz3").style = 'display: none';
+              document.getElementById("tableauViz2").style = 'display: none';
+              document.getElementById("show1Link").style = 'color: #000';
+          }
+
+          function show1() {
+            document.getElementById("tableauViz4").style = 'display: none';
+            document.getElementById("tableauViz3").style = 'display: none';
+            document.getElementById("tableauViz2").style = 'display: none';
+            document.getElementById("tableauViz1").style = 'display: block; color: #000;';
+            document.getElementById("show1Link").style = 'color: #000';
+
+          }
+          function show2() {
+            document.getElementById("tableauViz4").style = 'display: none';
+            document.getElementById("tableauViz3").style = 'display: none';
+            document.getElementById("tableauViz1").style = 'display: none';
+            document.getElementById("tableauViz2").style = 'display: block';
+            document.getElementById("show2Link").style = 'color: #000';
+
+          }
+          function show3() {
+            document.getElementById("tableauViz4").style = 'display: none';
+            document.getElementById("tableauViz2").style = 'display: none';
+            document.getElementById("tableauViz1").style = 'display: none';
+            document.getElementById("tableauViz3").style = 'display: block';
+            document.getElementById("show3Link").style = 'color: #000';
+
+          }
+          function show4() {
+            document.getElementById("tableauViz3").style = 'display: none';
+            document.getElementById("tableauViz2").style = 'display: none';
+            document.getElementById("tableauViz1").style = 'display: none';
+            document.getElementById("tableauViz4").style = 'display: block';
+            document.getElementById("show4Link").style = 'color: #000';
+          }
+        </script>
+  </head>
+  <body onload="initViz();">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="qci.png" alt="This is a test image" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link ml-3" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link ml-3" href="proj-stat.html">Project Status</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-3" href="http://qrcoal.qcin.org/">QR Coal</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="d-flex py-3"> <!-- 'd-flex' is for horizontal -->
+        <div onclick="show1();" class="pr-3 link" id="show1Link">
+          Signed and Monthly
+        </div>
+        <div onclick="show2();" class="px-3 link" id="show2Link">
+          Reports status
+        </div>
+        <div onclick="show3();" class="px-3 link" id="show3Link">
+          Grade variation
+        </div>
+        <div onclick="show4();" class="px-3 link" id="show4Link">
+          Refree status
+        </div>
+      </div>
+
+      <div id="tableauViz2" class="w-100"></div>
+      <div id="tableauViz1" class="w-100"></div>
+      <div id="tableauViz3" class="w-100"></div>
+      <div id="tableauViz4" class="w-100"></div>
+    </div>
+  </body>
+</html>

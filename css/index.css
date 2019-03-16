@@ -1,0 +1,48 @@
+@import url('https://rsms.me/inter/inter.css');
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+
+.logo {
+	height: 60px;
+	width: auto;
+}
+
+.primary-btn {
+	background: #0097d2;
+	color: #FFFFFF;
+}
+
+.primary-btn:hover {
+	background: #0081b3;
+	color: #FFFFFF;
+}
+
+.hero-img {
+	width: 100%;
+}
+
+.heading {
+	font-size: 28px;
+	line-height: 42px;
+	font-weight: 500;
+}
+
+.text {
+	color: #777;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+#viz-client-container {
+	width: 100% !important;
+}
+
+.link {
+	color: #0097d2;
+	cursor: pointer;
+}
+.link:hover {
+	color: #0081b3;
+}
