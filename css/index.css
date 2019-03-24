@@ -4,13 +4,24 @@ body {
 }
 
 
+.navbar {
+	box-shadow: 0 1px 22px 0px rgba(0,0,0,0.2);
+}
+
+.navbar-default .navbar-brand {
+    color: #d6d6d7;
+}
+
+
+
+
 .logo {
 	height: 60px;
 	width: auto;
 }
 
 .primary-btn {
-	background: #0097d2;
+	background: #000b0f;
 	color: #FFFFFF;
 }
 
@@ -43,6 +54,10 @@ body {
 	color: #0097d2;
 	cursor: pointer;
 }
-.link:hover {
-	color: #0081b3;
+
+
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
 }

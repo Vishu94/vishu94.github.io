@@ -35,7 +35,6 @@
             document.getElementById("tableauViz2").style = 'display: none';
             document.getElementById("tableauViz1").style = 'display: block; color: #000;';
             document.getElementById("show1Link").style = 'color: #000';
-
           }
           function show2() {
             document.getElementById("tableauViz4").style = 'display: none';
@@ -68,6 +67,7 @@
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="qci.png" alt="This is a test image" class="logo">
+          <span class="navbar-text"><strong>Quality Council of India</strong></span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -76,13 +76,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link ml-3" href="index.html">Home</a>
+              <a class="nav-link ml-3" href="index.html"><strong>Home</strong></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link ml-3" href="proj-stat.html">Project Status</a>
+              <a class="nav-link ml-3" href="proj-stat.html"><strong>Project Status</strong></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-3" href="http://qrcoal.qcin.org/">QR Coal</a>
+              <a class="nav-link ml-3" href="http://qrcoal.qcin.org/"><strong>QR Coal</strong></a>
             </li>
           </ul>
         </div>
@@ -92,7 +92,7 @@
     <div class="container">
       <div class="d-flex py-3"> <!-- 'd-flex' is for horizontal -->
         <div onclick="show1();" class="pr-3 link" id="show1Link">
-          Signed and Monthly
+          Signed and Monthly Lifting
         </div>
         <div onclick="show2();" class="px-3 link" id="show2Link">
           Reports status
@@ -105,10 +105,46 @@
         </div>
       </div>
 
+  <!-- <div class="container">
+      <ul class="nav nav-pills">
+        <li class="active" onclick="show1();" id="show1Link">
+          <a data-toggle="pill" href="#">Signed and Monthly</a>
+        </li>
+        <li onclick="show2();" id="show2Link">
+          <a data-toggle="pill" href="#">Reports status</a>
+        </li>
+        <li onclick="show3();" id="show3Link">
+          <a data-toggle="pill" href="#">Grade variation</a>
+        </li>
+        <li onclick="show4();" id="show4Link">
+          <a data-toggle="pill" href="#" tabindex="-1" aria-disabled="true">Refree status</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="tableauViz2" class="tab-pane fade in active">
+          <h3>HOME</h3>
+          <p>Some content.</p>
+        </div>
+        <div id="show2Link" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Some content in menu 1.</p>
+        </div>
+        <div id="show3Link" class="tab-pane fade">
+          <h3>Menu 2</h3>
+          <p>Some content in menu 2.</p>
+        </div>
+      </div>
+  </div> -->
+
       <div id="tableauViz2" class="w-100"></div>
       <div id="tableauViz1" class="w-100"></div>
       <div id="tableauViz3" class="w-100"></div>
       <div id="tableauViz4" class="w-100"></div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
